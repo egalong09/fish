@@ -1,0 +1,29 @@
+/**
+ * 全局样式
+ * 极简摸鱼阅读器 — 透明背景、无滚动条
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 禁用所有滚动条 */
+  background: transparent; /* 配合 Electron transparent 窗口 */
+  user-select: none;
+}
+
+/* 隐藏 Chromium 滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
